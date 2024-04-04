@@ -1,0 +1,36 @@
+{
+  "nodes": {
+    "prompt": {
+      "variant_0": {
+        "inputs": {
+          "text": []
+        }
+      }
+    },
+    "get_documents_rag": {
+      "variant_0": {
+        "inputs": {
+          "input1": [],
+          "db": []
+        }
+      }
+    },
+    "prompt_builder": {
+      "variant_0": {
+        "inputs": {
+          "input1": [],
+          "list_of_docs": [],
+          "crop": []
+        }
+      }
+    },
+    "inference_centre": {
+      "variant_0": {
+        "inputs": {
+          "pipeline": [],
+          "prompt": []
+        }
+      }
+    }
+  }
+}

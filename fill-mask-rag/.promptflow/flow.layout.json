@@ -1,0 +1,40 @@
+{
+  "nodeLayouts": {
+    "inputs": {
+      "x": 290,
+      "y": 42,
+      "index": -1
+    },
+    "outputs": {
+      "x": 230,
+      "y": 712,
+      "index": -1
+    },
+    "prompt": {
+      "x": 150,
+      "y": 444,
+      "index": 3
+    },
+    "get_documents_rag": {
+      "x": 140,
+      "y": 176,
+      "index": 1
+    },
+    "get_db": {
+      "x": 470,
+      "y": 42,
+      "index": 0
+    },
+    "prompt_builder": {
+      "x": 150,
+      "y": 310,
+      "index": 2
+    },
+    "inference_centre": {
+      "x": 150,
+      "y": 578,
+      "index": 4
+    }
+  },
+  "orientation": "Vertical"
+}

@@ -1,0 +1,27 @@
+2024-04-04 13:38:44 +0200   20668 execution.flow     INFO     Start executing nodes in thread pool mode.
+2024-04-04 13:38:44 +0200   20668 execution.flow     INFO     Start to run 5 nodes with concurrency level 16.
+2024-04-04 13:38:45 +0200   20668 execution.flow     INFO     Executing node get_db. node run id: 7f962233-faef-46ce-bb60-4ccc454caf38_get_db_0
+2024-04-04 13:38:47 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> C:\Users\pinky\.conda\envs\LLM\Lib\site-packages\datasets\load.py:2516: FutureWarning: 'use_auth_token' was deprecated in favor of 'token' in version 2.14.0 and will be removed in 3.0.0.
+You can remove this warning by passing 'token=<use_auth_token>' instead.
+  warnings.warn(
+2024-04-04 13:38:49 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Downloading readme:   0%|                                                                                                                                                         | 0.00/919 [00:00<?, ?B/s]
+2024-04-04 13:38:49 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> 
+2024-04-04 13:38:49 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Downloading readme: 100%|##########################################################################################################################################################| 919/919 [00:00<?, ?B/s]
+2024-04-04 13:38:52 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Downloading data:   0%|                                                                                                                                                          | 0.00/498k [00:00<?, ?B/s]
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Downloading data: 100%|##################################################################################################################################################| 498k/498k [00:00<00:00, 1.25MB/s]
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> 
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Downloading data: 100%|##################################################################################################################################################| 498k/498k [00:00<00:00, 1.25MB/s]
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Generating train split: 0 examples [00:00, ? examples/s]
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> 
+2024-04-04 13:38:53 +0200   20668 execution          WARNING  [get_db in line 0 (index starts from 0)] stderr> Generating train split: 49 examples [00:00, 1693.27 examples/s]
+2024-04-04 13:38:59 +0200   20668 execution.flow     WARNING  Output of get_db is not json serializable, use str to store it.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Node get_db completes.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Executing node get_documents_rag. node run id: 7f962233-faef-46ce-bb60-4ccc454caf38_get_documents_rag_0
+2024-04-04 13:38:59 +0200   20668 execution.flow     WARNING  Input 'db' of get_documents_rag is not json serializable, use str to store it.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Node get_documents_rag completes.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Executing node prompt_builder. node run id: 7f962233-faef-46ce-bb60-4ccc454caf38_prompt_builder_0
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Node prompt_builder completes.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Executing node prompt. node run id: 7f962233-faef-46ce-bb60-4ccc454caf38_prompt_0
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Node prompt completes.
+2024-04-04 13:38:59 +0200   20668 execution.flow     INFO     Executing node inference_centre. node run id: 7f962233-faef-46ce-bb60-4ccc454caf38_inference_centre_0
+2024-04-04 13:39:33 +0200   20668 execution.flow     INFO     Node inference_centre completes.

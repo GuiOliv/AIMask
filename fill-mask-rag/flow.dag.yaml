@@ -1,0 +1,47 @@
+inputs:
+  Crop:
+    type: string
+    default: potato
+outputs:
+  Masked output:
+    type: string
+    reference: ${inference_centre.output}
+nodes:
+- name: get_db
+  type: python
+  source:
+    type: code
+    path: get_db.py
+  inputs: {}
+- name: get_documents_rag
+  type: python
+  source:
+    type: code
+    path: get_documents_rag.py
+  inputs:
+    input1: ${inputs.Crop}
+    db: ${get_db.output}
+  aggregation: false
+- name: prompt_builder
+  type: python
+  source:
+    type: code
+    path: prompt_builder.py
+  inputs:
+    list_of_docs: ${get_documents_rag.output}
+    crop: ${inputs.Crop}
+  aggregation: false
+- name: prompt
+  type: prompt
+  source:
+    type: code
+    path: prompt.jinja2
+  inputs:
+    text: ${prompt_builder.output}
+- name: inference_centre
+  type: python
+  source:
+    type: code
+    path: inference_centre.py
+  inputs:
+    prompt: ${prompt.output}
